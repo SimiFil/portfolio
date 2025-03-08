@@ -1,0 +1,266 @@
+body {
+    height: 100%;
+    min-height: 100vh;
+    color: white;
+    background-color: #0a0a0a;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="8" height="8" fill="none" stroke="rgb(255 255 255 / 0.08)"><path d="M0 .5H31.5V32"/></svg>'); /* background squares*/
+    margin: 0;
+    padding: 0;
+}
+
+#main-page-margin {
+    width: 80%;
+    margin: 4em auto;
+    padding: 0 1em;
+}
+
+.green-gradient-lr {
+    background: linear-gradient(to right, #11853b, #47db7a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Mobile first layout */
+#intro-section {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4em;
+    min-height: 90vh;
+}
+
+#job-title {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+#my-name {
+    font-size: 3em;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+#image-reference-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25em;
+}
+
+#profile-image {
+    display: block;
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    max-height: 20em;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.icon {
+    width: 1.8em;
+    height: 1.8em;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Projects section */
+#my-projects {
+    margin-bottom: 4em;
+}
+
+#my-projects h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+#my-projects p {
+    line-height: 1.6;
+    padding-bottom: 1em;
+}
+
+/* Project cards */
+.project {
+    margin-bottom: 2em;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 1.5em;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: #47db7a;
+}
+
+/* About Me section */
+#about-me {
+    margin-bottom: 4em;
+}
+
+#about-me h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#about-me p {
+    line-height: 1.6;
+}
+
+/* Tablet/Notebook breakpoint */
+@media (min-width: 768px) {
+    #navigation {
+        display: block;
+    }
+    
+    #navigation nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    #navigation nav ul li {
+        margin: 0 1.5em;
+    }
+    
+    #navigation nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+        position: relative;
+        padding-bottom: 0.5em;
+    }
+    
+    #navigation nav ul li a:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #47db7a;
+        transition: width 0.3s ease;
+    }
+    
+    #navigation nav ul li a:hover:after {
+        width: 100%;
+    }
+
+    #main-page-margin {
+        margin-top: 5em;
+    }
+    
+    #intro-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    
+    #intro-description {
+        flex: 1;
+    }
+    
+    #job-title {
+        font-size: 1.2em;
+    }
+    
+    #my-name {
+        font-size: 5em;
+    }
+    
+    #image-reference-section {
+        flex: 1;
+        margin-left: 2em;
+        margin-top: 0;
+    }
+    
+    #profile-image {
+        max-width: 100%;
+        height: 15em;
+    }
+
+    .icon {
+        width: 1.8em;
+        height: 1.8em;
+    }
+    
+    .project {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .project-image {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .project-info {
+        width: 60%;
+    }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 1024px) {
+    #main-page-margin {
+        margin-top: 6em;
+        width: 80%;
+    }
+    
+    #job-title {
+        font-size: 1.5em;
+    }
+    
+    #my-name {
+        font-size: 8em;
+    }
+    
+    #profile-image {
+        max-height: 20em;
+    }
+    
+    .icon {
+        width: 2em;
+        height: 2em;
+    }
+}
+
+/* Large Desktop breakpoint */
+@media (min-width: 1440px) {
+    #main-page-margin {
+        width: 70%;
+    }
+    
+    #my-name {
+        font-size: 10em;
+    }
+    
+    #profile-image {
+        max-height: 25em;
+    }
+}
