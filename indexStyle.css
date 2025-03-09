@@ -28,10 +28,10 @@ body {
     position: sticky;
     top: 0;
     height: 4em;
-    z-index: 999;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 999;
 }
 
 #navigation.scrolled {
@@ -54,8 +54,8 @@ body {
     width: 2em;
     height: 2em;
     margin: 2em;
-    cursor: pointer;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .burger-menu span {
@@ -252,7 +252,6 @@ body {
         left: 0;
         padding: 1.2em 0;
         width: 100%;
-        z-index: 1000;
         transition: all 0.3s ease;
     }
 
@@ -260,7 +259,6 @@ body {
         width: 100%;
         height: auto;
         position: static;
-        background-color: transparent;
     }
 
     #navigation nav ul {
@@ -268,8 +266,6 @@ body {
         flex-direction: row;
         justify-content: center;
         position: static;
-        background-color: transparent;
-        box-shadow: none;
         width: auto;
         height: auto;
         opacity: 1;
@@ -284,11 +280,6 @@ body {
         padding: 0.5em 0;
         position: relative;
         font-size: 1.2em;
-    }
-    
-    /* navigation hover animation */
-    #navigation nav ul li a:hover {
-        background-color: transparent;
     }
     
     #navigation nav ul li a::after {
