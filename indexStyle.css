@@ -1,6 +1,4 @@
 body {
-    height: 100%;
-    min-height: 100vh;
     color: white;
     background-color: #0a0a0a;
     font-family: "Oxanium", sans-serif;
@@ -208,7 +206,7 @@ body {
 }
 
 .project {
-    min-height: 10em;
+    font-size: 0.875em;
     background-color: #0a0a0a;
     border: 1px solid #404041;
     border-radius: 8px;
@@ -268,6 +266,11 @@ body {
     gap: 1em;
 }
 
+.project-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .project-link {
     font-size: 0.9em;
     height: 2.5em;
@@ -298,21 +301,27 @@ body {
             saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
 }
 
-.project-tech-stack {
+.tech-stack-items {
+    font-size: 0.875em;
+    color: #d4d3d8;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5em;
+    padding: 0.5em;
 }
 
-/* .tech-stack-items {
+.tech-used {
     display: flex;
-    flex: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-start;
-    gap: 1em;
-} */
+    gap: 0.5em;
+}
+
+.tech-used span {
+    margin-top: 1px;
+}
 
 .tech-used img {
     width: 1em;
@@ -343,7 +352,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        padding: 1.2em 0;
+        padding: 0.5em 0;
         width: 100%;
         transition: all 0.3s ease;
     }
@@ -361,7 +370,6 @@ body {
         position: static;
         width: auto;
         height: auto;
-        opacity: 1;
     }
     
     #navigation nav ul li {
@@ -436,6 +444,14 @@ body {
 
     .grid {
         grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .project {
+        font-size: 1em;
+    }
+
+    .tech-stack-items {
+        font-size: 1em;
     }
 }
 
