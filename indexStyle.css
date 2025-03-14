@@ -136,11 +136,15 @@ p {
     background-color: transparent;
 }
 
+section {
+    margin: 10em 0;
+}
+
 /* intro section - job, name, profile image, links*/
 #intro-section {
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 4em;
+    margin: 0;
     min-height: 90vh;
 }
 
@@ -203,7 +207,7 @@ p {
 }
 
 /* Project cards */
-.grid {
+.project-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2em;
@@ -312,8 +316,7 @@ p {
 }
 
 .project-link:hover img {
-    filter: brightness(0) saturate(100%) invert(50%) sepia(60%) 
-            saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(50%) sepia(60%) saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
 }
 
 .tech-stack-items {
@@ -367,6 +370,54 @@ p {
     height: 1.5em;
     margin-right: 0.5em;
     filter: brightness(0) saturate(100%) invert(50%) sepia(60%) saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.technology {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 3em;
+    padding: 0.5em 1em;
+    border: 1px solid #404041;
+    border-radius: 8px;
+    top: 0;
+    transition: top 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.technology:hover {
+    top: -10px;
+    border: 1px solid #23c457;
+}
+
+.technology:hover > img {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(60%) saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
+}
+
+.technology > div {
+    font-size: 0.9em;
+}
+
+.technology > div > div:nth-child(2) {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    color: #d4d3d8;
+    overflow: hidden;
+}
+
+.technology > img {
+    filter: brightness(0) invert(0.5);
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
 }
 
 footer a {
@@ -478,7 +529,7 @@ footer a {
         height: 1.8em;
     }
 
-    .grid {
+    .project-grid {
         grid-template-columns: repeat(2, minmax(0,1fr));
     }
 
@@ -547,7 +598,7 @@ footer a {
 /* Large Desktop breakpoint */
 @media (min-width: 1440px) {
     #main-page-margin {
-        width: 70%;
+        width: 65%;
     }
     
     #intro-description h1 {
@@ -559,15 +610,11 @@ footer a {
         height: 30em;
     }
 
-    #my-projects {
+    section {
         font-size: 1.2em;
     }
 
     .project-header img {
         border-radius: 100px;
-    }
-
-    #about-me {
-        font-size: 1.2em;
     }
 }
