@@ -257,7 +257,7 @@ section {
 }
 
 .project-features {
-    min-height: 8em;
+    min-height: 13em;
 }
 
 .project-features ul {
@@ -270,10 +270,17 @@ section {
     gap: 10px;
 }
 
+.project-features ul li {
+    position: relative;
+    padding-left: 1.5em;
+}
+
 .project-features ul li:before {
     color: #26c45f;
     content: '➤';
     margin-right: .5em;
+    position: absolute;
+    left: 0;
 }
 
 .project-links {
@@ -442,6 +449,7 @@ footer a {
 @media (min-width: 760px) {
     #main-page-margin {
         width: 80%;
+        margin-top: 5em;
     }
 
     .burger-menu {
@@ -497,10 +505,6 @@ footer a {
     #navigation nav ul li a:hover::after {
         width: 100%;
     }
-
-    #main-page-margin {
-        margin-top: 5em;
-    }
     
     #intro-section {
         display: flex;
@@ -539,11 +543,15 @@ footer a {
     }
 
     .project-grid {
-        grid-template-columns: repeat(2, minmax(0,1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .project {
         font-size: 0.9em;
+    }
+
+    .project-features {
+        min-height: 18em;
     }
 
     .tech-stack-items {
@@ -619,6 +627,14 @@ footer a {
         height: 30em;
     }
 
+    .project-header img {
+        border-radius: 100px;
+    }
+
+    .project-features {
+        min-height: 16em;
+    }
+
     #about-me p {
         width: 65%;
     }
@@ -633,9 +649,5 @@ footer a {
 
     footer {
         font-size: 1.2em;
-    }
-
-    .project-header img {
-        border-radius: 100px;
     }
 }
