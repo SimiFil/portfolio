@@ -1,0 +1,100 @@
+body {
+    color: white;
+    background-color: #0a0a0a;
+    font-family: "Oxanium", sans-serif;
+    font-style: normal;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="8" height="8" fill="none" stroke="rgb(255 255 255 / 0.08)"><path d="M0 .5H31.5V32"/></svg>'); /* background squares*/
+    margin: 0;
+    padding: 0;
+}
+
+.main-page-margin {
+    width: 85%;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    color: #d4d3d8;
+    line-height: 1.6;
+}
+
+.green-gradient-lr {
+    background: linear-gradient(to right, #11853b, #47db7a, #47db7a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* icons */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+    filter: brightness(0) invert(0.8);
+}
+
+.icon {
+    width: 1.8em;
+    height: 1.8em;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+section {
+    margin: 10em 0;
+}
+
+.section-title {
+    font-size: 2.5em;
+    text-align: left;
+}
+
+@media (min-width: 760px) {
+    .main-page-margin {
+        width: 80%;
+        margin-top: 5em;
+    }
+
+    .icon {
+        width: 1.8em;
+        height: 1.8em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-page-margin {
+        width: 80%;
+    }
+
+    .icon {
+        width: 2em;
+        height: 2em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .section-title {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-page-margin {
+        width: 65%;
+    }
+
+    section {
+        font-size: 1.2em;
+    }
+}

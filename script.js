@@ -2,6 +2,16 @@ window.onload = function() {
     setupBurgerMenu();
     setupScrollEffect();
     setupNavLinks();
+
+    const currentPage = window.location.pathname;
+    const currentPageStripped = currentPage.replace('/', '');
+    console.log(currentPage);
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(function(link) {
+        if (link.getAttribute('href') === currentPage || link.getAttribute('href') === currentPageStripped) {
+            link.classList.add('current');
+        }
+    });
 }
 
 function setupBurgerMenu() {

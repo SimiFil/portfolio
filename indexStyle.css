@@ -1,146 +1,4 @@
-body {
-    color: white;
-    background-color: #0a0a0a;
-    font-family: "Oxanium", sans-serif;
-    font-style: normal;
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="8" height="8" fill="none" stroke="rgb(255 255 255 / 0.08)"><path d="M0 .5H31.5V32"/></svg>'); /* background squares*/
-    margin: 0;
-    padding: 0;
-}
-
-#main-page-margin {
-    width: 85%;
-    margin: 2em auto;
-    padding: 0 1em;
-}
-
-p {
-    color: #d4d3d8;
-    line-height: 1.6;
-}
-
-.green-gradient-lr {
-    background: linear-gradient(to right, #11853b, #47db7a, #47db7a);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
 /* Mobile first layout */
-#navigation {
-    position: sticky;
-    top: 0;
-    height: 4em;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 999;
-}
-
-#navigation.scrolled {
-    background-color: rgba(10, 10, 10, 0.95);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-}
-
-#navigation nav {
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-/* mobile burger menu */
-.burger-menu {
-    display: block;
-    width: 2em;
-    height: 2em;
-    margin: 2em;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-.burger-menu span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 2em;
-    background: white;
-    border-radius: 3px;
-    transition: .25s ease-in-out;
-}
-
-.burger-menu span:nth-child(1) {
-    top: 1.5em;
-}
-
-.burger-menu span:nth-child(2) {
-    top: 2em;
-}
-
-.burger-menu span:nth-child(3) {
-    top: 2.5em;
-}
-
-/* Burger menu animation when active */
-.burger-menu.active span:nth-child(1) {
-    top: 2em;
-    transform: rotate(135deg);
-}
-
-.burger-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.burger-menu.active span:nth-child(3) {
-    top: 2em;
-    transform: rotate(-135deg);
-}
-
-#navigation nav ul {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.3s ease;
-}
-
-#navigation.active nav ul {
-    display: flex;
-    background-color: rgba(10, 10, 10, 0.95);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-}
-
-#navigation nav ul li {
-    margin: 1em 0;
-    text-align: center;
-}
-
-#navigation nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-    padding: 0.5em 1em;
-    display: block;
-    transition: color 0.3s ease;
-}
-
-#navigation nav ul li a:hover {
-    color: #47db7a;
-    background-color: transparent;
-}
-
-section {
-    margin: 10em 0;
-}
-
 /* intro section - job, name, profile image, links*/
 #intro-section {
     text-transform: uppercase;
@@ -174,29 +32,6 @@ section {
     max-width: 100%;
     height: auto;
     max-height: 20em;
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
-    filter: brightness(0) invert(0.8);
-}
-
-.icon {
-    width: 1.8em;
-    height: 1.8em;
-    transition: transform 0.3s ease;
-}
-
-.icon:hover {
-    transform: scale(1.1);
-}
-
-.section-title {
-    font-size: 2.4em;
-    text-align: left;
 }
 
 /* Projects section */
@@ -325,9 +160,11 @@ section {
     filter: brightness(0) saturate(100%) invert(50%) sepia(60%) saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
 }
 
+.tech-stack {
+    margin-bottom: 1em;
+}
+
 .tech-stack-items {
-    height: 4.5em;
-    overflow-y: hidden;
     font-size: 0.875em;
     color: #d4d3d8;
     display: flex;
@@ -425,87 +262,8 @@ section {
     margin-right: 1em;
 }
 
-/* Footer - contact me + links */
-footer {
-    text-align: center;
-}
-
-footer .section-title {
-    text-align: center;
-}
-
-footer .icons {
-    font-size: 2em;
-    margin-bottom: 3em;
-}
-
-footer a {
-    font-size: 0.5em;
-    color: #d4d3d8;
-    text-decoration: none;
-}
-
 /* Tablet/Notebook breakpoint */
-@media (min-width: 760px) {
-    #main-page-margin {
-        width: 80%;
-        margin-top: 5em;
-    }
-
-    .burger-menu {
-        display: none;
-    }
-
-    #navigation {
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 0.5em 0;
-        width: 100%;
-        transition: all 0.3s ease;
-    }
-
-    #navigation nav {
-        width: 100%;
-        height: auto;
-        position: static;
-    }
-
-    #navigation nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: static;
-        width: auto;
-        height: auto;
-    }
-    
-    #navigation nav ul li {
-        margin: 0 1.5em;
-        width: auto;
-    }
-    
-    #navigation nav ul li a {
-        padding: 0.5em 0;
-        position: relative;
-        font-size: 1.2em;
-    }
-    
-    #navigation nav ul li a::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #47db7a;
-        transition: width 0.3s ease;
-    }
-    
-    #navigation nav ul li a:hover::after {
-        width: 100%;
-    }
-    
+@media (min-width: 760px) {    
     #intro-section {
         display: flex;
         flex-direction: row;
@@ -515,7 +273,7 @@ footer a {
     }
     
     #intro-description {
-        flex: 1;
+        flex: 2;
     }
     
     #intro-description h2 {
@@ -537,11 +295,6 @@ footer a {
         height: 15em;
     }
 
-    .icon {
-        width: 1.8em;
-        height: 1.8em;
-    }
-
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -551,7 +304,7 @@ footer a {
     }
 
     .project-features {
-        min-height: 18em;
+        min-height: 16em;
     }
 
     .tech-stack-items {
@@ -575,10 +328,6 @@ footer a {
 
 /* Desktop breakpoint */
 @media (min-width: 1024px) {
-    #main-page-margin {
-        width: 80%;
-    }
-
     #intro-description h2 {
         font-size: 1.8em;
         margin-top: 0;
@@ -587,15 +336,6 @@ footer a {
     
     #intro-description h1 {
         font-size: 8em;
-    }
-    
-    .icon {
-        width: 2em;
-        height: 2em;
-    }
-
-    .section-title {
-        font-size: 3em;
     }
 
     #about-me p {
@@ -613,11 +353,7 @@ footer a {
 }
 
 /* Large Desktop breakpoint */
-@media (min-width: 1440px) {
-    #main-page-margin {
-        width: 65%;
-    }
-    
+@media (min-width: 1440px) {    
     #intro-description h1 {
         font-size: 9em;
     }
@@ -632,7 +368,7 @@ footer a {
     }
 
     .project-features {
-        min-height: 16em;
+        min-height: 14em;
     }
 
     #about-me p {
@@ -641,13 +377,5 @@ footer a {
 
     #about-me > div {
         width: 30%;
-    }
-
-    section {
-        font-size: 1.2em;
-    }
-
-    footer {
-        font-size: 1.2em;
     }
 }
