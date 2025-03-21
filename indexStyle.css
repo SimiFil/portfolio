@@ -34,6 +34,10 @@
     max-height: 20em;
 }
 
+section {
+    margin: 10em 0;
+}
+
 /* Projects section */
 #my-projects {
     margin-bottom: 4em;
@@ -118,6 +122,35 @@
     left: 0;
 }
 
+.tech-stack {
+    margin-bottom: 1em;
+}
+
+.tech-stack-items {
+    font-size: 0.875em;
+    color: #d4d3d8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5em;
+    padding: 0.5em;
+    margin: 1em 0;
+}
+
+.tech-used {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.tech-used img {
+    width: 1em;
+    height: 1em;
+    filter: brightness(0) invert(0.5);
+}
+
 .project-links {
     display: flex;
     flex-direction: column;
@@ -129,6 +162,7 @@
 .project-links a {
     text-decoration: none;
     color: #FFFFFF;
+    font-weight: 600;
 }
 
 .project-link {
@@ -160,35 +194,6 @@
     filter: brightness(0) saturate(100%) invert(50%) sepia(60%) saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
 }
 
-.tech-stack {
-    margin-bottom: 1em;
-}
-
-.tech-stack-items {
-    font-size: 0.875em;
-    color: #d4d3d8;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1.5em;
-    padding: 0.5em;
-    margin: 1em 0;
-}
-
-.tech-used {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5em;
-}
-
-.tech-used img {
-    width: 1em;
-    height: 1em;
-    filter: brightness(0) invert(0.5);
-}
-
 /* About Me section */
 #about-me {
     margin-bottom: 4em;
@@ -214,6 +219,7 @@
     filter: brightness(0) saturate(100%) invert(50%) sepia(60%) saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
 }
 
+/* Tech I can use */
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));

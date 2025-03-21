@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Filip Simandl featuring iOS games, web applications, and other software development projects built with Swift, Django, Java, and more.">
+    <meta name="keywords" content="software developer, iOS development, Swift, SwiftUI, Django, Python, portfolio, projects, game development, web applications, Filip Simandl">
     <title>My projects</title>
     <link rel="stylesheet" href="layoutStyle.css">
     <link rel="stylesheet" href="navbarStyle.css">
@@ -32,114 +34,250 @@
     </header>
 
     <main class="main-page-margin">
-        <h1>My <span class="green-gradient-lr">Projects</span></h1>
+        <section id="projects-intro">
+            <h1>My <span class="green-gradient-lr">Projects</span></h1>
 
-        <div class="projects-grid">
-            <div class="project">
-                <div class="project-header">
-                    <img src="images/status-shuffle-icon.png" alt="status shuffle app icon">
-                    <div class="project-title">
-                        <h3>The Status Shuffle</h3>
-                        <div>iOS multiplayer game</div>
-                    </div>
-                </div>
-                <div class="project-features">
-                    <h4>Key Features:</h4>
-                    <ul>
-                        <li>Multiplayer game for 2-8 players using GameKit & Game Center</li>
-                        <li>Real-time multiplayer functionality</li>
-                        <li>Intuitive card-moving gesture</li>
-                    </ul>
-                </div>
-                <div class="tech-stack">
-                    <h4>Tech Stack:</h4>
-                    <div class="tech-stack-items">
-                        <div class="tech-used">
-                            <img src="images/swift-plain.png" alt="swift logo">
-                            <span>Swift</span>
+            <p class="projects-intro">
+                Welcome to my portfolio of projects. Here you'll find a collection of my work across various technologies including iOS development, web applications, and games.
+                Each project represents my passion for creating innovative solutions and my journey as a developer.
+            </p>
+        </section>
+
+        <section id="projects">
+            <ul id="project-grid">
+                <li>
+                    <div class="project">
+                        <div class="project-header">
+                            <img src="images/status-shuffle-icon.png" alt="status shuffle app icon">
+                            <div class="project-title">
+                                <h3>The Status Shuffle</h3>
+                                <div>iOS multiplayer game</div>
+                            </div>
+                            <span class="live">live</span>
                         </div>
-                        <div class="tech-used">
-                            <img src="images/swift-plain.png" alt="swift logo">
-                            <span>SwiftUI</span>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Multiplayer game</li>
+                                <li>GameKit & Game Center</li>
+                                <li>Card-moving gesture</li>
+                            </ul>
                         </div>
-                        <div class="tech-used">
-                            <img src="images/swift-plain.png" alt="swift logo">
-                            <span>SwiftData</span>
+                        <div class="tech-stack">
+                            <h4>Tech Stack:</h4>
+                            <div class="tech-stack-items">
+                                <div class="tech-used">
+                                    <img src="images/swift-plain.png" alt="swift logo">
+                                    <span>Swift</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/swift-plain.png" alt="swift logo">
+                                    <span>SwiftUI</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/swift-plain.png" alt="swift logo">
+                                    <span>SwiftData</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/SimiFil/MovieBase" target="_blank">
-                        <div class="project-link">
-                            <img src="images/github-mark-white.svg" alt="github logo">
-                            <span>View on Github</span>
-                        </div>
-                    </a>
-                    <a href="https://apps.apple.com/cz/app/the-status-shuffle/id6740525404" target="_blank">
-                        <div class="project-link">
-                            <img src="images/open-in-new.svg" alt="open in new window">
-                            <span>Live Demo</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-header">
-                    <img src="images/maturuj-icon.png" alt="cinext app icon">
-                    <div class="project-title">
-                        <h3>Maturuj</h3>
-                        <div>Django web app</div>
-                    </div>
-                </div>
-                <div class="project-features">
-                    <h4>Key Features:</h4>
-                    <ul>
-                        <li>Web app for Czech high school graduation</li>
-                        <li>DB for graduation questions with user uploads</li>
-                        <li>Registration and login with option to reset password</li>
-                    </ul>
-                </div>
-                <div class="tech-stack">
-                    <h4>Tech Stack:</h4>
-                    <div class="tech-stack-items">
-                        <div class="tech-used">
-                            <img src="images/django-plain.png" alt="django logo">
-                            <span>Django</span>
-                        </div>
-                        <div class="tech-used">
-                            <img src="images/python-original.png" alt="python logo">
-                            <span>Python</span>
-                        </div>
-                        <div class="tech-used">
-                            <img src="images/bootstrap-plain.png" alt="bootsrap logo">
-                            <span>Bootstrap</span>
-                        </div>
-                        <div class="tech-used">
-                            <img src="images/html5-plain.png" alt="html logo">
-                            <span>HTML</span>
-                        </div>
-                        <div class="tech-used">
-                            <img src="images/css3-plain.png" alt="css logo">
-                            <span>CSS</span>
+                        <div class="project-links">
+                            <a href="https://github.com/SimiFil/MovieBase" target="_blank">
+                                <div class="project-link">
+                                    <img src="images/github-mark-white.svg" alt="github logo">
+                                    <span>View on Github</span>
+                                </div>
+                            </a>
+                            <a href="TheStatusShuffleDetail.html">
+                                <div class="project-link">
+                                    <img class="mg-icon" src="images/search-icon.svg" alt="view details icon">
+                                    <span>View Details</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/SimiFil/maturuj" target="_blank">
-                        <div class="project-link">
-                            <img src="images/github-mark-white.svg" alt="github logo">
-                            <span>View on Github</span>
+                </li>
+
+                <li>
+                    <div class="project">
+                        <div class="project-header">
+                            <img src="images/maturuj-icon.png" alt="maturuj app icon">
+                            <div class="project-title">
+                                <h3>Maturuj</h3>
+                                <div>Django web app</div>
+                            </div>
+                            <span class="live">live</span>
                         </div>
-                    </a>
-                    <a href="https://maturuj.pythonanywhere.com" target="_blank">
-                        <div class="project-link">
-                            <img src="images/open-in-new.svg" alt="open in new window">
-                            <span>Live Demo</span>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Czech graduation web app</li>
+                                <li>Questions database</li>
+                                <li>User authentification</li>
+                            </ul>
                         </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+                        <div class="tech-stack">
+                            <h4>Tech Stack:</h4>
+                            <div class="tech-stack-items">
+                                <div class="tech-used">
+                                    <img src="images/django-plain.png" alt="django logo">
+                                    <span>Django</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/python-original.png" alt="python logo">
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/bootstrap-plain.png" alt="bootsrap logo">
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/html5-plain.png" alt="html logo">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/css3-plain.png" alt="css logo">
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SimiFil/maturuj" target="_blank">
+                                <div class="project-link">
+                                    <img src="images/github-mark-white.svg" alt="github logo">
+                                    <span>View on Github</span>
+                                </div>
+                            </a>
+                            <a href="TheStatusShuffleDetail.html">
+                                <div class="project-link">
+                                    <img class="mg-icon" src="images/search-icon.svg" alt="view details icon">
+                                    <span>View Details</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="project">
+                        <div class="project-header">
+                            <img src="images/cinext-icon.png" alt="CINEXT app icon">
+                            <div class="project-title">
+                                <h3>CINEXT</h3>
+                                <div>iOS upcoming movie app</div>
+                            </div>
+                            <span class="live">live</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Czech graduation web app</li>
+                                <li>Questions database</li>
+                                <li>User authentification</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <h4>Tech Stack:</h4>
+                            <div class="tech-stack-items">
+                                <div class="tech-used">
+                                    <img src="images/django-plain.png" alt="django logo">
+                                    <span>Django</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/python-original.png" alt="python logo">
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/bootstrap-plain.png" alt="bootsrap logo">
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/html5-plain.png" alt="html logo">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/css3-plain.png" alt="css logo">
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SimiFil/maturuj" target="_blank">
+                                <div class="project-link">
+                                    <img src="images/github-mark-white.svg" alt="github logo">
+                                    <span>View on Github</span>
+                                </div>
+                            </a>
+                            <a href="TheStatusShuffleDetail.html">
+                                <div class="project-link">
+                                    <img class="mg-icon" src="images/search-icon.svg" alt="view details icon">
+                                    <span>View Details</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="project">
+                        <div class="project-header">
+                            <img src="images/maturuj-icon.png" alt="maturuj app icon">
+                            <div class="project-title">
+                                <h3>Maturuj</h3>
+                                <div>Django web app</div>
+                            </div>
+                            <span class="live">live</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Czech graduation web app</li>
+                                <li>Questions database</li>
+                                <li>User authentification</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <h4>Tech Stack:</h4>
+                            <div class="tech-stack-items">
+                                <div class="tech-used">
+                                    <img src="images/django-plain.png" alt="django logo">
+                                    <span>Django</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/python-original.png" alt="python logo">
+                                    <span>Python</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/bootstrap-plain.png" alt="bootsrap logo">
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/html5-plain.png" alt="html logo">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="tech-used">
+                                    <img src="images/css3-plain.png" alt="css logo">
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SimiFil/maturuj" target="_blank">
+                                <div class="project-link">
+                                    <img src="images/github-mark-white.svg" alt="github logo">
+                                    <span>View on Github</span>
+                                </div>
+                            </a>
+                            <a href="TheStatusShuffleDetail.html">
+                                <div class="project-link">
+                                    <img class="mg-icon" src="images/search-icon.svg" alt="view details icon">
+                                    <span>View Details</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer class="main-page-margin">
@@ -151,7 +289,7 @@
         <div class="icons">
             <a href="https://github.com/SimiFil" target="_blank"><img class="icon" src="images/github-mark-white.svg" alt="github white logo"></a>
             <a href="images/filip-simandl-cv.pdf" download><img class="icon" src="images/download.svg" alt="download my cv"></a>
-            <a href="mailto:filip.simandl@gmail.com?subject=Job Request"><img class="icon" src="images/mail.svg" alt="email image"></a>
+            <a href="mailto:filip.simandl@gmail.com?subject=Job&nbsp;Request"><img class="icon" src="images/mail.svg" alt="email image"></a>
         </div>
         <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Icon Mela - Flaticon</a>
     </footer>
