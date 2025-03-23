@@ -67,10 +67,6 @@ p {
 }
 
 @media (min-width: 1024px) {
-    .main-page-margin {
-        width: 80%;
-    }
-
     .icon {
         width: 2em;
         height: 2em;
@@ -90,7 +86,7 @@ p {
         width: 65%;
     }
 
-    section {
+    section h2, p {
         font-size: 1.2em;
     }
 }

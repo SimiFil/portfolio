@@ -3,6 +3,7 @@
 }
 
 #project-grid {
+    font-size: 1.1em;
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
