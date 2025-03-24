@@ -1,5 +1,10 @@
 footer {
+    margin-top: 10em;
     text-align: center;
+}
+
+footer.main-page-margin {
+    margin-top: 10em;
 }
 
 footer .section-title {
