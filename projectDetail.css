@@ -53,22 +53,6 @@
     gap: 1em;
 }
 
-.section-title:not(footer .section-title) {
-    font-size: 2em;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title:not(footer .section-title)::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 2em;
-    height: 3px;
-    background: var(--green-gradient);
-}
-
 #project-showcase {
     display: flex;
     flex-direction: column;

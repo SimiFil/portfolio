@@ -3,41 +3,14 @@
     --subtitle-color: #d4d3d8;
     --school-info-color: #7f8c8d;
     --secondary-color: #8BC34A;
-    /* 
-    --text-color: #e0e0e0;
-    --bg-color: #121212; */
     --card-bg: #1e1e1e;
     --education-section-color: #2ecc71;
     --border-radius: 8px;
-    /* --accent-color: #4CAF50;
-    */
-}
-
-.section-title:not(footer .section-title) {
-    font-size: 2em;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title:not(footer .section-title)::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 2em;
-    height: 3px;
-    background: var(--green-gradient);
-}
-
-/* About Me Intro */
-#about-me-intro {
-    margin-bottom: 4em;
 }
 
 /* Education Styles */
 #my-education {
     position: relative;
-    margin-bottom: 4em;
 }
 
 #my-education ol::before {
@@ -52,6 +25,7 @@
 }
 
 #my-education ol {
+    margin: 0;
     list-style: none;
     position: relative;
 }
@@ -97,10 +71,6 @@
 }
 
 /* Tech Stack Styles */
-#my-tech-stack {
-    margin-bottom: 4em;
-}
-
 #my-tech-stack ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -128,8 +98,8 @@
 }
 
 .technology img {
-    width: 50px;
-    height: 50px;
+    width: 3em;
+    height: 3em;
     margin-right: 1em;
 }
 
@@ -145,10 +115,6 @@
 }
 
 /* Hobbies Styles */
-#my-hobbies {
-    margin-bottom: 4em;
-}
-
 #my-hobbies ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -170,7 +136,7 @@
     width: 15em;
     height: 15em;
     border: 4px solid var(--education-section-color);
-    border-radius: 45% 55% 60% 40% / 40% 45% 55% 60%; 
+    border-radius: 45% 55% 60% 40% / 40% 45% 55% 60%;
     margin-inline: auto;
     text-align: center;
     transition: transform 0.3s ease;
