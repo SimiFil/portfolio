@@ -26,6 +26,7 @@
 
 #my-education ol {
     margin: 0;
+    margin-top: -2em;
     list-style: none;
     position: relative;
 }

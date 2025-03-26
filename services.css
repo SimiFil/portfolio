@@ -1,0 +1,218 @@
+:root {
+    --green-gradient: linear-gradient(90deg, #4CAF50, #8BC34A);
+    --subtitle-color: #d4d3d8;
+    --border-color: #7f8c8d;
+    --secondary-color: #8BC34A;
+    --card-bg: #1e1e1e;
+    --border-radius: 8px;
+    --text-light: #f0f0f0;
+    --accent-color: #2ecc71;
+    --metallic-gold-gradient: linear-gradient(45deg, #D4AF37, #D4AF37, #FFFFFF);
+}
+
+.feature-icon {
+    font-size: 1em;
+    margin-left: 0.25em;
+    rotate: 15deg;
+    display: inline-block;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    justify-content: center;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-light);
+    position: relative;
+    min-height: 30em;
+    width: 100%;
+    padding: 2em;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    transition: 
+        transform 0.3s ease, 
+        box-shadow 0.3s ease;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(46, 204, 113, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.service-card:hover::before {
+    opacity: 0.5;
+}
+
+.service-card h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    color: var(--accent-color);
+    background: var(--green-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-card .name-and-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+
+.service-card .price {
+    background: var(--metallic-gold-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.service-card p {
+    color: var(--subtitle-color);
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.service-card .features-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.service-card .features-list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.service-card .features-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.service-card .ideal-for{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: var(--border-radius);
+    color: var(--subtitle-color);
+    margin-top: auto;
+    background-color: rgba(46, 204, 113, 0.1);
+    padding: 1em;
+}
+
+.service-card .ideal-for > div {
+    font-weight: 700;
+}
+
+.service-card .ideal-for ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    gap: 1em;
+}
+
+.service-card .ideal-for li {
+    list-style-type: square;
+    padding: 0;
+}
+
+.service-card .ideal-for li::marker {
+    color: var(--accent-color);
+}
+
+.service-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+#process-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    counter-reset: item;
+    gap: 2em;
+    padding-left: 0;
+}
+
+#process-list li {
+    color: var(--subtitle-color);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    counter-increment: item;
+    position: relative;
+    padding-left: 5em;
+}
+
+#process-item h3 {
+    color: var(--text-light);
+}
+
+#process-list li::before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+    font-size: 1.8em;
+    width: 1.4em;
+    height: 1.4em;
+    border: 3px solid var(--accent-color);
+    border-radius: 50%;
+}
+
+.process-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+@media (min-width: 430px) {
+    .feature-icon {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 500px) {
+    .service-card {
+        min-height: 25.5em;
+    }
+}
+
+@media (min-width: 760px) {
+    .services-container {
+        gap: 1.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .service-card {
+        width: 40%;
+    }
+}
