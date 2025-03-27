@@ -83,6 +83,7 @@
 #my-tech-stack li {
     display: flex;
     align-items: center;
+    max-height: 3em;
 }
 
 .technology {

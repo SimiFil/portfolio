@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Filip Simandl - IOS/Web Developer</title>
+    <link rel="stylesheet" href="layoutStyle.css">
+    <link rel="stylesheet" href="navbarStyle.css">
+    <link rel="stylesheet" href="footerStyle.css">
+    <link rel="stylesheet" href="contactMe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="navigation">
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="aboutMe.html">about me</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="contactMe.html">contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-page-margin">
+        <section id="contact-me">
+            <h1>Contact <span class="green-gradient-lr">Me</span></h1>
+            <form id="contact-form" action="" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your contact number">
+                </div>
+
+                <div class="form-group">
+                    <label for="service-interest">Service of Interest</label>
+                    <select id="service-interest" name="service-interest">
+                        <option value="">Select a Service</option>
+                        <option value="basic-ios">Basic iOS Application</option>
+                        <option value="premium-ios">Premium iOS Application</option>
+                        <option value="basic-web">Basic Web Application</option>
+                        <option value="advanced-web">Advanced Web Application</option>
+                        <option value="other">Other / Consultation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or inquiry"></textarea>
+                </div>
+
+                <div id="submit-btn-box">
+                    <button type="submit" class="green-gradient-lr">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-page-margin">
+        <h2 class="section-title">You can always <span class="green-gradient-lr">contact</span> me</h2>
+        <p>
+            I am always open to new opportunities and collaborations. Whether you have a question, a project proposal,
+            or just want to say hello, feel free to get in touch. I look forward to connecting with you!
+        </p>
+        <div class="icons">
+            <a href="https://github.com/SimiFil" target="_blank"><img class="icon" src="images/github-mark-white.svg" alt="github white logo"></a>
+            <a href="images/filip-simandl-cv.pdf" download><img class="icon" src="images/download.svg" alt="download my cv"></a>
+            <a href="mailto:filip.simandl@gmail.com?subject=Job&nbsp;Request"><img class="icon" src="images/mail.svg" alt="email image"></a>
+        </div>
+        <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Icon Mela - Flaticon</a>
+    </footer>
+</body>
+</html>

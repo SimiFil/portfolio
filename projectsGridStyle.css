@@ -76,7 +76,7 @@
 }
 
 .project-header span {
-    display: flex;
+    display: none;
     align-items: center;
     position: absolute;
     top: 0;
@@ -203,6 +203,12 @@
     width: 1em;
     height: 1em;
     filter: brightness(0) invert(0.5);
+}
+
+@media (min-width: 500px) {
+    .project-header span {
+        display: flex;
+    }
 }
 
 @media (min-width: 760px) {
