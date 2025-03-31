@@ -71,7 +71,6 @@
 .service-card .name-and-price {
     display: flex;
     justify-content: space-between;
-    align-items: last baseline;
 }
 
 .service-card .price {
