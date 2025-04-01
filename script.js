@@ -13,12 +13,8 @@ window.onload = function() {
         }
     });
 
-    document.querySelectorAll('a').forEach(function(link) {
-        console.log('Found link:', link.href);
-        link.addEventListener('click', function(e) {
-            console.log('Link clicked:', this.href);
-            // Don't add e.preventDefault() here - just for testing
-        });
+    document.querySelectorAll("img").forEach(img => {
+        img.setAttribute("loading", "lazy"); 
     });
 }
 
