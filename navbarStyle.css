@@ -15,11 +15,16 @@
 }
 
 #navigation nav {
+    display: none;
     position: fixed;
     height: 100vh;
     top: 0;
     left: 0;
     right: 0;
+}
+
+#navigation.active nav {
+    display: block;
 }
 
 #navigation nav ul {

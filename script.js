@@ -12,6 +12,14 @@ window.onload = function() {
             link.classList.add('current');
         }
     });
+
+    document.querySelectorAll('a').forEach(function(link) {
+        console.log('Found link:', link.href);
+        link.addEventListener('click', function(e) {
+            console.log('Link clicked:', this.href);
+            // Don't add e.preventDefault() here - just for testing
+        });
+    });
 }
 
 function setupBurgerMenu() {
@@ -45,7 +53,7 @@ function setupScrollEffect() {
 }
 
 function setupNavLinks() {
-    const navLinks = document.querySelectorAll('nav');
+    const navLinks = document.querySelectorAll('nav a');
     const burgerMenu = document.querySelector('.burger-menu');
     const navigation = document.getElementById('navigation');
     
