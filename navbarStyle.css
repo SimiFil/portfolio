@@ -1,4 +1,4 @@
-#navigation {
+.navigation {
     position: sticky;
     top: 0;
     height: 4em;
@@ -8,13 +8,13 @@
     z-index: 999;
 }
 
-#navigation.scrolled {
+.navigation.scrolled {
     background-color: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 }
 
-#navigation nav {
+.navigation nav {
     display: none;
     position: fixed;
     height: 100vh;
@@ -23,11 +23,11 @@
     right: 0;
 }
 
-#navigation.active nav {
+.navigation.active nav {
     display: block;
 }
 
-#navigation nav ul {
+.navigation nav ul {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -40,19 +40,19 @@
     transition: opacity 0.3s ease;
 }
 
-#navigation.active nav ul {
+.navigation.active nav ul {
     display: flex;
     background-color: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 }
 
-#navigation nav ul li {
+.navigation nav ul li {
     margin: 1em 0;
     text-align: center;
 }
 
-#navigation nav span, nav ul li a {
+.navigation nav span, nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
@@ -61,7 +61,7 @@
     transition: color 0.3s ease;
 }
 
-#navigation .current {
+.navigation .current {
     pointer-events: none;
     cursor: default;
     color: #47db7a;
@@ -69,7 +69,7 @@
     text-transform: uppercase;
 }
 
-#navigation nav ul li a:hover {
+.navigation nav ul li a:hover {
     color: #47db7a;
     background-color: transparent;
 }
@@ -126,20 +126,20 @@
         display: none;
     }
 
-    #navigation {
+    .navigation {
         padding: 0.5em 0;
         width: 100%;
         transition: all 0.3s ease;
     }
 
-    #navigation nav {
+    .navigation nav {
         display: block;
         width: 100%;
         height: auto;
         position: static;
     }
 
-    #navigation nav ul {
+    .navigation nav ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -148,18 +148,18 @@
         height: auto;
     }
     
-    #navigation nav span, nav ul li a {
+    .navigation nav span, nav ul li a {
         padding: 0.5em 0;
         margin-inline: 1.5em;
         position: relative;
         font-size: 1.2rem;
     }
 
-    #navigation nav span {
+    .navigation nav span {
         margin-inline: 1.5em;
     }
     
-    #navigation nav ul li a::after {
+    .navigation nav ul li a::after {
         content: '';
         position: absolute;
         width: 0;
@@ -170,7 +170,7 @@
         transition: width 0.3s ease;
     }
     
-    #navigation nav ul li a:hover::after {
+    .navigation nav ul li a:hover::after {
         width: 100%;
     }
 }

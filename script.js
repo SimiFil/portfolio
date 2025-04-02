@@ -24,7 +24,7 @@ window.onload = function() {
 
 function setupBurgerMenu() {
     const burgerMenu = document.querySelector('.burger-menu');
-    const navigation = document.getElementById('navigation');
+    const navigation = document.querySelector('.navigation');
     
     burgerMenu.addEventListener('click', function() {
         if (navigation.classList.contains('scrolled')) {
@@ -41,7 +41,7 @@ function setupBurgerMenu() {
 }
 
 function setupScrollEffect() {
-    const navigation = document.getElementById('navigation');
+    const navigation = document.querySelector('.navigation');
     
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50 && !navigation.classList.contains('active')) {
@@ -55,7 +55,7 @@ function setupScrollEffect() {
 function setupNavLinks() {
     const navLinks = document.querySelectorAll('nav a');
     const burgerMenu = document.querySelector('.burger-menu');
-    const navigation = document.getElementById('navigation');
+    const navigation = document.querySelector('.navigation');
     
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
