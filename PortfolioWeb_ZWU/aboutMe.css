@@ -1,0 +1,180 @@
+:root {
+    --green-gradient: linear-gradient(90deg, #4CAF50, #8BC34A);
+    --subtitle-color: #d4d3d8;
+    --school-info-color: #7f8c8d;
+    --secondary-color: #8BC34A;
+    --card-bg: #1e1e1e;
+    --education-section-color: #2ecc71;
+    --border-radius: 8px;
+}
+
+/* Education Styles */
+#my-education {
+    position: relative;
+}
+
+#my-education ol::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1em;
+    width: 0.2em;
+    height: auto;
+    background: linear-gradient(to bottom, var(--education-section-color), #27ae60);
+}
+
+#my-education ol {
+    margin: 0;
+    margin-top: -2em;
+    list-style: none;
+    position: relative;
+}
+
+#my-education li {
+    margin-top: 3em;
+    position: relative;
+}
+
+#my-education li::before {
+    content: '';
+    position: absolute;
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    background: var(--education-section-color);
+    left: -2.5em;
+    top: 1em;
+    border: 4px solid var(--card-bg);
+    box-shadow: 0 0 0 4px var(--education-section-color);
+}
+
+.school {
+    padding: 1.5em 1em;
+    padding-left: 2em;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.school-name {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: var(--education-section-color);
+}
+
+.school-location, .school-int {
+    color: var(--school-info-color);
+    margin-top: 0.5em;
+}
+
+.school:hover {
+    transform: scale(1.02);
+}
+
+/* Tech Stack Styles */
+#my-tech-stack ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+}
+
+#my-tech-stack li {
+    display: flex;
+    align-items: center;
+    max-height: 3em;
+}
+
+.technology {
+    background-color: var(--card-bg);
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+}
+
+.technology:hover {
+    transform: scale(1.05);
+}
+
+.technology img {
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+}
+
+.technology > div > div:nth-child(2) {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    color: var(--subtitle-color);
+    overflow: hidden;
+}
+
+.gray-filter {
+    filter: brightness(0) invert(0.5);
+}
+
+/* Hobbies Styles */
+#my-hobbies ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5em;
+    list-style: none;
+    padding: 0;
+}
+
+#my-hobbies li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: var(--card-bg);
+    padding: 1.5em;
+    width: 15em;
+    height: 15em;
+    border: 4px solid var(--education-section-color);
+    border-radius: 45% 55% 60% 40% / 40% 45% 55% 60%;
+    margin-inline: auto;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#my-hobbies li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at center, 
+        rgba(140, 195, 74, 0.1), 
+        transparent 70%
+    );
+    opacity: 0.6;
+}
+
+#my-hobbies li:hover {
+    transform: scale(1.05);
+}
+
+.hobby {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    background: var(--secondary-color);
+    background-clip: text;
+    color: transparent;
+}
+
+.hobby-subclass {
+    color: var(--subtitle-color);
+}
+
+@media screen and (min-width: 760px) {
+    #my-education li {
+        width: max-content;
+    }
+}

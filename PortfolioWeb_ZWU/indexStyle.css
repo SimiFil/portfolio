@@ -1,0 +1,202 @@
+/* Mobile first layout */
+/* intro section - job, name, profile image, links*/
+#intro-section {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    min-height: 90vh;
+}
+
+#intro-description h2 {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+#intro-description h1 {
+    font-size: 3em;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+#image-reference-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25em;
+}
+
+#profile-image {
+    display: block;
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    max-height: 20em;
+}
+
+section {
+    margin: 10em 0;
+}
+
+/* About Me section */
+#about-me ul {
+    color: #d4d3d8;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 2.5em;
+}
+
+#about-me div {
+    display: flex;
+    align-items: center;
+}
+
+#about-me img {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(60%) saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
+}
+
+/* Tech I can use */
+#tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.technology {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    max-height: 3em;
+    padding: 1em;
+    border: 1px solid #404041;
+    border-radius: 8px;
+    top: 0;
+    transition: top 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.technology:hover {
+    top: -10px;
+    border: 1px solid #23c457;
+}
+
+.technology:hover > img {
+    filter: brightness(0) saturate(100%) invert(50%) sepia(60%) saturate(1231%) hue-rotate(113deg) brightness(80%) contrast(100%);
+}
+
+.technology > div {
+    font-size: 0.9em;
+}
+
+.technology > div > div:nth-child(2) {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    color: #d4d3d8;
+    overflow: hidden;
+}
+
+.technology > img {
+    filter: brightness(0) invert(0.5);
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+}
+
+/* Tablet/Notebook breakpoint */
+@media (min-width: 760px) {    
+    #intro-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    
+    #intro-description {
+        flex: 2;
+    }
+    
+    #intro-description h2 {
+        font-size: 1.2em;
+    }
+    
+    #intro-description h1 {
+        font-size: 5em;
+    }
+    
+    #image-reference-section {
+        flex: 1;
+        margin-left: 2em;
+        margin-top: 0;
+    }
+    
+    #profile-image {
+        max-width: 100%;
+        height: 15em;
+    }
+
+    #about-me p {
+        display: inline-block;
+        width: 60%;
+        vertical-align: middle;
+        margin-right: 1em;
+    }
+
+    #about-me > div {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+        margin-left: 1em;
+    }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 1024px) {
+    #intro-description h2 {
+        font-size: 1.8em;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    
+    #intro-description h1 {
+        font-size: 8em;
+    }
+
+    #about-me p {
+        display: inline-block;
+        width: 70%;
+        vertical-align: middle;
+        margin-right: 1em;
+    }
+
+    #about-me > div {
+        display: inline-block;
+        width: 20%;
+        margin-left: 1em;
+    }
+}
+
+/* Large Desktop breakpoint */
+@media (min-width: 1440px) {    
+    #intro-description h1 {
+        font-size: 9em;
+    }
+
+    #profile-image {
+        max-width: 25em;
+        height: 30em;
+    }
+
+    #about-me p {
+        width: 65%;
+    }
+
+    #about-me > div {
+        width: 30%;
+    }
+}

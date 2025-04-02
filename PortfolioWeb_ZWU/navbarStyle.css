@@ -1,0 +1,176 @@
+#navigation {
+    position: sticky;
+    top: 0;
+    height: 4em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
+}
+
+#navigation.scrolled {
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+#navigation nav {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#navigation.active nav {
+    display: block;
+}
+
+#navigation nav ul {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+#navigation.active nav ul {
+    display: flex;
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+#navigation nav ul li {
+    margin: 1em 0;
+    text-align: center;
+}
+
+#navigation nav span, nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+#navigation .current {
+    pointer-events: none;
+    cursor: default;
+    color: #47db7a;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#navigation nav ul li a:hover {
+    color: #47db7a;
+    background-color: transparent;
+}
+
+/* mobile burger menu */
+.burger-menu {
+    display: block;
+    width: 2em;
+    height: 2em;
+    margin: 2em;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 2em;
+    background: white;
+    border-radius: 3px;
+    transition: .25s ease-in-out;
+}
+
+.burger-menu span:nth-child(1) {
+    top: 1.5em;
+}
+
+.burger-menu span:nth-child(2) {
+    top: 2em;
+}
+
+.burger-menu span:nth-child(3) {
+    top: 2.5em;
+}
+
+/* Burger menu animation when active */
+.burger-menu.active span:nth-child(1) {
+    top: 2em;
+    transform: rotate(135deg);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    top: 2em;
+    transform: rotate(-135deg);
+}
+
+@media (min-width: 760px) {
+    .burger-menu {
+        display: none;
+    }
+
+    #navigation {
+        padding: 0.5em 0;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    #navigation nav {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    #navigation nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    
+    #navigation nav span, nav ul li a {
+        padding: 0.5em 0;
+        margin-inline: 1.5em;
+        position: relative;
+        font-size: 1.2rem;
+    }
+
+    #navigation nav span {
+        margin-inline: 1.5em;
+    }
+    
+    #navigation nav ul li a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #47db7a;
+        transition: width 0.3s ease;
+    }
+    
+    #navigation nav ul li a:hover::after {
+        width: 100%;
+    }
+}
