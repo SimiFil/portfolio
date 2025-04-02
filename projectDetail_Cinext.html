@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CINEXT - A comprehensive iOS movie tracking application with TMDb API integration, SwiftData storage, and WidgetKit support. Developed by Filip Simandl using Swift, SwiftUI, and modern iOS frameworks.">
+    <meta name="keywords" content="CINEXT, iOS app, movie tracking, movie database, Filip Simandl, Swift, SwiftUI, SwiftData, TMDb API, mobile app, iOS development, app development, WidgetKit, MovieBase, movie discovery">
+    <title>CINEXT | Projects | Filip Simandl - IOS/Web Developer</title>
+    <link rel="stylesheet" href="layoutStyle.css">
+    <link rel="stylesheet" href="navbarStyle.css">
+    <link rel="stylesheet" href="footerStyle.css">
+    <link rel="stylesheet" href="projectDetail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="navigation">
+        <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./">home</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="aboutMe.html">about me</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="contactMe.html">contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-page-margin">
+        <section id="project-header">
+            <div id="badges">
+                <span class="badge">iOS App</span>
+                <span class="badge">Movies</span>
+                <span class="badge">2024</span>
+            </div>
+            
+            <div id="project-name">
+                <img src="images/cinext-icon.png" alt="CINEXT app icon">
+                <h1 class="green-gradient-lr">CINEXT</h1>
+            </div>
+            
+            <div id="project-showcase">
+                <div id="project-links">
+                    <a href="https://github.com/SimiFil/MovieBase" class="project-link" target="_blank">
+                        <img src="images/github-mark-white.svg" alt="github logo">
+                        View Repository
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-overview">
+            <h2 class="section-title">Overview</h2>
+            <p>
+                CINEXT is a comprehensive iOS movie tracking application that allows users to discover new upcoming movies 
+                and manage their watchlist. The app integrates with 
+                The Movie Database (TMDb) API to provide up-to-date information on movies, including descriptions, 
+                ratings, cast information, and more.
+            </p>
+            <p>
+                With an intuitive interface and robust data management using SwiftData, CINEXT helps movie enthusiasts 
+                organize their viewing experience and discover new films based on their preferences. The app also 
+                features WidgetKit integration for quick access to watchlist content directly from the home screen.
+            </p>
+            
+            <div id="project-stats">
+                <div class="stat-card">
+                    <span class="stat-number">1K+</span>
+                    <span class="stat-label">Movies Available</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">TMDb</span>
+                    <span class="stat-label">API Integration</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Months Development</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech-used">
+            <h2 class="section-title">Technology Used</h2>
+            <div id="tech-grid">
+                <div class="technology">
+                    <img src="images/swift-plain.png" alt="swift logo">
+                    <div>
+                        <div>Swift</div>
+                        <div>Language</div>
+                    </div>
+                </div>
+                <div class="technology">
+                    <img src="images/swift-plain.png" alt="swift logo">
+                    <div>
+                        <div>SwiftUI</div>
+                        <div>UI Framework</div>
+                    </div>
+                </div>
+                <div class="technology">
+                    <img src="images/swift-plain.png" alt="swift logo">
+                    <div>
+                        <div>SwiftData</div>
+                        <div>Storage</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-features">
+            <h2 class="section-title">Key Features</h2>
+            <div id="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎬</div>
+                    <h3>TMDb API Integration</h3>
+                    <p>Access a vast database of movies with detailed information and media content</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>SwiftData Storage</h3>
+                    <p>Efficiently store and manage movie data locally with Apple's modern persistence framework</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Advanced Search</h3>
+                    <p>Find movies by title, genre, actor, or director with intuitive filtering options</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>WidgetKit Support</h3>
+                    <p>Quick access to watchlist directly from the iOS home screen</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div id="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/cinext/home-screen.PNG" alt="Home Screen" class="gallery-image">
+                    <div class="gallery-caption">Home Screen</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cinext/detail-screen.PNG" alt="Movie Details" class="gallery-image">
+                    <div class="gallery-caption">Movie Details</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cinext/watchlist.PNG" alt="Watchlist" class="gallery-image">
+                    <div class="gallery-caption">Watchlist</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-page-margin">
+        <h2 class="section-title">You can always <span class="green-gradient-lr">contact</span> me</h2>
+        <p>
+            I am always open to new opportunities and collaborations. Whether you have a question, a project proposal,
+            or just want to say hello, feel free to get in touch. I look forward to connecting with you!
+        </p>
+        <div class="icons">
+            <a href="https://github.com/SimiFil" target="_blank"><img class="icon" src="images/github-mark-white.svg" alt="github white logo"></a>
+            <a href="images/filip-simandl-cv.pdf" download><img class="icon" src="images/download.svg" alt="download my cv"></a>
+            <a href="mailto:filip.simandl@gmail.com?subject=Job&nbsp;Request"><img class="icon" src="images/mail.svg" alt="email image"></a>
+        </div>
+        <div>
+            &copy; Filip Simandl 2025
+        </div>
+        <a href="https://www.flaticon.com/free-icons/cat" title="cat icons">Cat icons created by Icon Mela - Flaticon</a>
+    </footer>
+</body>
+</html>

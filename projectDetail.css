@@ -60,14 +60,17 @@
     margin-bottom: 2em;
 }
 
+#project-showcase > * {
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
 #video-container {
     position: relative;
     width: 100%;
     /* max-width: 45em; */
     /* margin-inline: auto; */
-    border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     margin-top: 2em;
     margin-bottom: 1em;
 }

@@ -205,6 +205,12 @@
     filter: brightness(0) invert(0.5);
 }
 
+#project-grid li:is(:nth-child(4), :nth-child(5)) .project-links a:nth-child(2) {
+    pointer-events: none;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
 @media (min-width: 500px) {
     .project-header span {
         display: flex;

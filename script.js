@@ -7,12 +7,12 @@ window.onload = function() {
     const lastSlashIndex = currentPage.lastIndexOf("/");
     const pageName = currentPage.substring(lastSlashIndex + 1);
 
-    // console.log(currentPage);
-    // console.log("page name: " + pageName)
+    console.log(currentPage);
+    console.log("page name: " + pageName)
     
     const navLinks = document.querySelectorAll('nav a');
     navLinks.forEach(function(link) {
-        if (link.getAttribute('href') === pageName || link.getAttribute('href') === "./") {
+        if (link.getAttribute('href') === pageName || (link.getAttribute('href') === "./" && pageName === "")) {
             link.classList.add('current');
         }
     });
