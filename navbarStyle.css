@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 .navigation {
-=======
-#navigation {
->>>>>>> zwu-repo/main
     position: sticky;
     top: 0;
     height: 4em;
@@ -12,21 +8,13 @@
     z-index: 999;
 }
 
-<<<<<<< HEAD
 .navigation.scrolled {
-=======
-#navigation.scrolled {
->>>>>>> zwu-repo/main
     background-color: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 }
 
-<<<<<<< HEAD
 .navigation nav {
-=======
-#navigation nav {
->>>>>>> zwu-repo/main
     display: none;
     position: fixed;
     height: 100vh;
@@ -35,19 +23,11 @@
     right: 0;
 }
 
-<<<<<<< HEAD
 .navigation.active nav {
     display: block;
 }
 
 .navigation nav ul {
-=======
-#navigation.active nav {
-    display: block;
-}
-
-#navigation nav ul {
->>>>>>> zwu-repo/main
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -60,31 +40,19 @@
     transition: opacity 0.3s ease;
 }
 
-<<<<<<< HEAD
 .navigation.active nav ul {
-=======
-#navigation.active nav ul {
->>>>>>> zwu-repo/main
     display: flex;
     background-color: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 }
 
-<<<<<<< HEAD
 .navigation nav ul li {
-=======
-#navigation nav ul li {
->>>>>>> zwu-repo/main
     margin: 1em 0;
     text-align: center;
 }
 
-<<<<<<< HEAD
 .navigation nav span, nav ul li a {
-=======
-#navigation nav span, nav ul li a {
->>>>>>> zwu-repo/main
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
@@ -93,11 +61,7 @@
     transition: color 0.3s ease;
 }
 
-<<<<<<< HEAD
 .navigation .current {
-=======
-#navigation .current {
->>>>>>> zwu-repo/main
     pointer-events: none;
     cursor: default;
     color: #47db7a;
@@ -105,11 +69,7 @@
     text-transform: uppercase;
 }
 
-<<<<<<< HEAD
 .navigation nav ul li a:hover {
-=======
-#navigation nav ul li a:hover {
->>>>>>> zwu-repo/main
     color: #47db7a;
     background-color: transparent;
 }
