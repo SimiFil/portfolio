@@ -4,7 +4,7 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0;
-    min-height: 90vh;
+    min-height: 75vh;
 }
 
 #intro-description h2 {
@@ -182,7 +182,11 @@ section {
 }
 
 /* Large Desktop breakpoint */
-@media (min-width: 1440px) {    
+@media (min-width: 1440px) {
+    #intro-section {
+        min-height: 90vh;
+    }
+
     #intro-description h1 {
         font-size: 9em;
     }
